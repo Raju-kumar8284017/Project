@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>opyion</title>
+
+	<style type="text/css">
+		div{
+			height: 100px;
+			width: 100px;
+			margin: auto;
+			margin-top: 100px;
+		}
+	   
+		#input{
+			margin-left: 500px;
+			margin-top: 100px;
+			display: none;
+		}
+		#hidden_div{
+			display: none;
+		}
+		#hidden_div1{
+			display: none;
+		}
+	</style>
+</head>
+<body> 
+			
+
+          <select id="test" onclick="showDiv(this)">
+          	  <option value="0">no</option>
+          	  <option value="1">yes</option>
+          	  <option value="2">ok</option>
+          </select>
+
+          <div  id="hidden_div">
+             <input type="text"></input>
+             <select>
+          	   <option>Male</option>
+          	   <option>Female</option>
+             </select>
+          </div>
+
+          <div  id="hidden_div1">
+             <input type="text"></input>
+             <select>
+          	   <option>Male</option>
+          	   <option>Female</option>
+             </select>
+             <input type="text"></input>
+             <select>
+          	   <option>Male</option>
+          	   <option>Female</option>
+             </select>
+          </div>
+          
+
+       
+      <script type="text/javascript">
+
+      	
+      	   function showDiv(select) {
+
+      	   	if (select.value ==2) {
+      	   		let input1 = document.getElementById('hidden_div1');
+      	   		input1.style.display = 'block'
+
+      	   	}else{
+      	   		let input1 = document.getElementById('hidden_div1');
+      	   		input.style.display = 'none';
+      	   	};
+
+      	   	if (select.value ==1) {
+      	   		let input0 = document.getElementById('hidden_div');
+      	   		input0.style.display = 'block'
+
+      	   	}else{
+      	   		let input0 = document.getElementById('hidden_div');
+      	   		input0.style.display = 'none';
+      	   	};
+      	   };
+
+
+
+      	   function showDiv(select) {
+
+      	   	
+      	   };
+
+      	   //console.log(showdiv());
+      </script>
+</body>
+</html>
