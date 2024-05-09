@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
+  rel="stylesheet"/>
+
+	<link rel="stylesheet" type="text/css" href="assets/index.css">
+	<title>Register Now!</title>
+</head>
+<body>
+
+      
+	   <!------------------------------------- form------------------------------------------ -->
+<div class="container my-2">
+        
+        <div class="card shadow card-border">
+          <div class="card-header bg-info">
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:10px;">
+              <span class="step">Personal Details:</span>
+              <span class="step">Contact Info:</span>
+              <span class="step">Health Info:</span>
+              <span class="step">Additional info:</span>
+            </div>
+          </div>
+          <div class="card-body">
+          <form id="regForm" action="" >
+            <h2 class="d-flex justify-content-center font-weight-bold">Register Now</h2><hr>
+               <div class="d-flex justify-content-center">
+                  <label>
+                   <input type="radio" name="donate">&nbsp;<span id="Ovum">Ovum Donor:</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="donate">&nbsp;<span id="Sperm">Sperm Donor</span>
+                  </label>
+               </div>
+                
+             <div class="tab"><h5 class="font-weight-bold">Personal Details:</h5>
+             	 <div class="row">
+             	  <div class="col-md-6">
+                 <label>Name:</label>
+                  <p><input id="input1" name="self" type="text"placeholder="Full name" ></p>
+                </div>
+                <div class="col-md-6">
+                  <label>Spose</label>
+                    <p><input id="input3" name="Spose" type="text" placeholder="father/mother Name"></p>
+                </div>
+                <div class="col-md-6">
+                  <label>age:</label>
+                   <p><input id="input2" name="age" type="number" placeholder="age"></p>
+                </div>
+            
+                <div class="col-md-6">
+                  <label>Occupation:</label>
+                     <p><input id="input3" name="Occupation" type="text" placeholder="Occupation"></p>
+                </div>
+                <div class="col">
+                   <label>Image:</label>
+                     <p><input id="input5" type="file" name="photo"></p>
+                </div>
+               </div>
+             </div>
+            
+              
+            <div class="tab"><h5 class="font-weight-bold">Contact Info:</h5>
+            	<div class="row">
+            		<div class="col-md-6">
+              <label>Email:</label>
+              <p><input id="input5" type="email" placeholder="E-mail"></p>
+              </div>
+              <div class="col-md-6">
+              <label>Mobile:</label>
+              <p><input id="input6" type="number" placeholder="Phone"></p>
+              </div>
+              <div class="col-md-6">
+              <label>Aadhar No.:</label>
+              <p><input id="input7" type="number" name="" class="form-control" 
+                   placeholder="Enter Aadhar No."></p>
+              </div>
+              <div class="col-md-6">
+              <label>State:</label>
+              <p><input id="input7" type="text" name="" class="form-control" 
+                   placeholder="Enter State"></p>
+              </div>
+              <div class="col-md-6">
+              <label>City:</label>
+              <p><input id="input7" type="text" name="" class="form-control" 
+                   placeholder="Enter City"></p>
+              </div>
+              <div class="col-md-6">
+              <label>Pin code:</label>
+              <p><input id="input7" type="text" name="" class="form-control" 
+                   placeholder="Enter Pin code.."></p>
+              </div>
+              <div class="col">
+               <label>Full address:</label>
+              <p><input id="input8" type="textarea" name="" class="form-control" placeholder=
+                      "Enter Full address" style="height: 100px;"></p>
+              </div>
+             </div>  
+            </div>
+
+            <div class="tab"><h5 class="font-weight-bold">Health Info:</h5>
+              <div class="row">
+              	<div class="col-md-6">
+                 <label>Height:</label>
+                <input id="input6" type="number" placeholder="Height">
+               </div>
+               <div class="col-md-6">
+                   <label>weight:</label>
+                  <input id="input6" type="number" placeholder="weight">
+              </div>
+              <div class="col-md-6">
+                  <label>Blood Group:</label>
+                  <input id="input6" type="text" placeholder="Blood Group">
+               </div>
+                <div class="col-md-6">
+                  <label>BMI:</label>
+                  <input id="input6" type="text" placeholder="Blood Group">
+                </div>
+               </div>
+            </div>
+
+         </form>
+   <!-- child info -->
+           <div class="tab">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-11 bg-white mb-4">
+                  <div id="inputbox"><h5 class="font-weight-bold">Additional info:</h5>
+                   <label>No. of child:</label>
+                   <input type="text" name="" id="child_input" placeholder="enter No. of child" class="form-control">
+                  <button id="btnadd" class="btn btn-success font-weight-bold">+</button>
+                  <button id="btnsub" class="btn btn-warning font-weight-bold">-</button>
+               </div>
+                </div>
+              </div>
+           </div>
+      <!-- next prev btn -->        
+              <div style="overflow:auto;">
+             <div style="float:right;">
+               <button class="btn btn-primary mt-2" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+               <button class="btn btn-primary mt-2" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+             </div>
+           </div>
+       </div>
+     </div>
+    </div>
+	
+
+   <button id="scrollTop">top</button>
+
+ 
+     <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+
+  <!-- self js -->
+      <script type="text/javascript" src="assets/form_index.js"></script>
+
+      
+          
+      
+
+</body>
+</html>
