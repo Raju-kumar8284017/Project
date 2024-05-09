@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>temple door transfomation</title>
+	<style type="text/css">
+		.main{
+			border: 15px solid sandybrown;
+			width: 300px;
+			height: 450px;
+			margin: auto;
+			box-shadow: 0 0 20px black;
+			overflow: hidden;
+			position: relative;
+		}
+       .main img{
+       	  width: inherit;
+       	  height: inherit;
+       	  background-size: cover;
+       	  transition: all 0.8s;
+       }
+       .main:hover img{
+       	 transform: scale(1.2,1.2);
+       }
+       .left{
+       	  background-image: url("img/left door.jpg");
+       	   background-size: cover;
+       	  position: absolute;
+       	  top: 0;
+       	  left: 0;
+       	  width: 50%;
+       	  height: 100%;
+       	  transform: perspective(400px) rotatey(0deg);
+       	  transform-origin: left;
+       	  transition: all 0.8s;
+       }
+       .main:hover .left{
+       	transform: perspective(400px) rotateY(90deg);
+       }
+       .right{
+       	  background-image: url("img/right door.jpg");
+       	  background-size: cover;
+       	  position: absolute;
+       	  top: 0;
+       	  right: 0;
+       	  width: 50%;
+       	  height: 100%;
+       	  transform: perspective(400px) rotatex(0deg);
+       	  transform-origin: right;
+       	  transition: all 0.8s;
+       }
+          .main:hover .right{
+       	transform: perspective(400px) rotateY(-90deg);
+       }
+	</style>
+</head>
+<body>
+
+    <!------------------temple door transfomation----- ---------------------------------->
+
+       <div class="main">
+       	    <img src="img/ram.jpg">
+       	    <div class="left"></div>
+       	    <div class="right"></div>
+       </div>
+</body>
+</html>
