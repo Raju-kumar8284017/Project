@@ -1,0 +1,280 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #111111 !important;
+}
+:root{
+	--light-black:#1e2940;
+	--green:#55e6a5;
+}
+.bg-ldark{
+	background-color: var(--light-black)!important;
+}
+.text-success{
+	color: var(--green) !important;
+}
+.navbar-dark{
+	background-color: #111827 !important;
+}
+.bg-it{
+	background-color: white;
+	background-image: url(img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.btn-primary{
+	color:#39d0ae;
+}
+.over-img{
+	margin-left: 1rem;
+	margin-top: -26.5rem;
+	animation: up-down 2s infinite;
+	width: 400px;
+}
+@keyframes up-down{
+	0%{transform: translateY(0%);}
+	50%{transform:  translateY(3%);}
+	100%{transform:  translateY(0%);}
+}
+.img-body{
+	margin-left: 2rem;
+	margin-top: 8rem;
+	height: 400px;
+}
+/*-----------------MY SERIVCE-----------------------------------------------------------*/
+.bg-dark{
+	background-color: #111111 !important;
+}
+.SERIVCE-box{
+	width: 350px;
+	height: 300px;
+	border:2px solid gray;
+}
+.weblogo{
+	margin-top: -45rem;
+}
+.service-box-text{
+	margin-top: 5rem;
+}
+.line{
+	width: 200px;
+	border-top: 2px solid gray;
+}
+/*------------------------------------------about me----------------------------------------*/
+.about-img-box{
+	width: 300px;
+	height: 350px;
+	background-color: var(--green);
+}
+.about_img{
+	margin-top: 15px;
+	margin-left: -20px;
+	height: 400px;
+}
+.about-img-box-2{
+	width: 250px;
+	height: 100px;
+	background-color: #262628;
+}
+/*----------------------------------------------------design-----------------------------*/
+.design-card{
+	background-color: var(--light-black);
+}
+.form-control{
+	background-color: transparent !important;
+	color: white !important;
+	border: 0.5px solid var(--green);
+	height: 60px;
+}
+.btn{
+	background-color: var(--green);
+	width: 150px;
+	height: 60px;
+}
+/*-----------------------------------------education and skill-------------------------*/
+.skill-box1{
+	width: 150px;
+	height: 60px; 
+	border: 1px solid var(--green);
+}
+.progress-bar-block{
+	height: 60px;
+	background-color: var(--light-black);
+}
+
+/*--------------------------------------------------my recent portfolio-----------------------*/
+.portfolio-box{
+	position: relative;
+	height: 475px;
+	overflow: hidden;
+	background-image: url(img/1.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.portfolio-overlay{
+	position: absolute;
+	height: 20%;
+	bottom: 0;
+	width: 735px;
+	background-color: rgba(0, 0, 0, 0.4);
+	transform: rotatex(90deg);
+	transform-origin: bottom;
+	transition: all 1s;
+}
+
+.portfolio-box:hover .portfolio-overlay{
+	transform: rotatex(0deg);
+}
+
+.portfolio-box2{
+	position: relative;
+	height: 475px;
+	overflow: hidden;
+	background-image: url(img/2.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.portfolio-overlay2{
+	position: absolute;
+	height: 20%;
+	bottom: 0;
+	width: 350px;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 15px black;
+	transform: rotatex(90deg);
+	transform-origin: bottom;
+	transition: all 1s;
+}
+
+.portfolio-box2:hover .portfolio-overlay2{
+	transform:rotatex(0deg);
+}
+
+.portfolio-box3{
+	position: relative;
+	height: 600px;
+	width: 100%;
+	overflow: hidden;
+}
+.portfolio-overlay3{
+	position: absolute;
+	height: 20%;
+	bottom: 0;
+	width: inherit;
+	background-color: rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 15px black;
+	border-radius: 20px 20px 0 0;
+	transform: perspective(800px) rotatex(90deg);
+	transform-origin: bottom;
+	transition: all 1s;
+}
+
+.portfolio-box3:hover .portfolio-overlay3{
+	transform: perspective(800px) rotatex(0deg);
+}
+
+/*----------------------CLIENTS REVIEW---------------------------------------*/
+.client-box{
+	width: 500px;
+	height: 300px;
+	border: 2px solid gray;
+}
+.img-client{
+	margin-left: 20rem;
+	margin-top: -3rem;
+}
+.fa-star{
+	color: gold;
+}
+.quot{
+	margin-left: 23rem;
+	height: 40px;
+	margin-top: -150px;
+}
+/*-----------------------------------------------------marquee-------------------------*/
+.slide-text{
+	font-size: 130px;
+	font-weight: bold;
+	color: transparent;
+	background-clip: text;
+	-webkit-text-stroke:1px black;
+}
+.bg-success{
+	background-color: var(--green) !important;
+}
+/*-------------------------------------------------blog--------------------------------*/
+.blog-box{
+	width: 350px;
+	height: 350px;
+	border: 2px solid black;
+	overflow: hidden;
+}
+.blo-img{
+	transition: all 1s;
+}
+.blog-box:hover .blo-img{
+	transform: scale(1.2, 1.2);
+	transition: all 1s;
+}
+.date-box{
+	width: 200px;
+	height: 60px;
+	background-color: var(--green);
+	margin-top: -130px;
+	z-index: 1;
+}
+.image-title-card{
+	margin-top: -90px;
+}
+.cd-clr{
+	background-color: var(--light-black) !important;
+}
+.blog-icon{
+	color: var(--green);
+}
+
+
+@media (max-width:500px) {
+	   .blog-title-box{display: none;}
+}
+/*----------------SUBSCRIBE MY NEWSLETTER-------------------------------------*/
+.subscribe{
+	height: 500px;
+	background-image: url(img/subscribe.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.overlay{
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+.sub-btn{
+	height: 60px !important;
+	background-color: rgba(255,255,255,0.4)!important;
+}
+
+
+
+
+/*------------------------------blog------------------------------------------*/
+
+.bg-it2{
+	background-color: white;
+	background-image: url(bg/breadcrumb.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.date-box{
+	height: 120px;
+	width: 100px;
+	border-radius: 10px 10px 0 0;
+	margin-left: 20px;
+	background-color: var(--light-black);
+}
+
